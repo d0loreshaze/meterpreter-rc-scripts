@@ -3,4 +3,4 @@ hide_app_icon
 geolocate
 dump_calllog
 dump_contacts
-sms_dump
+dump_sms

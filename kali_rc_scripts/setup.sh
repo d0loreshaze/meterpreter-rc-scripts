@@ -15,6 +15,10 @@ sudo apt-get install proxychains -y
 sudo apt-get install gedit -y
 sudo apt-get install rake git gnutls-bin libgnutls-dev
 sudo apt-get install inspircd
+sudo apt-get install ssh
+sudo apt-get install python-pip
+sudo apt-get update
+sudo apt-get upgrade
 # sherlock for hunting user data
 cd .. && cd ..; mkdir resources; git clone https://github.com/sherlock-project/sherlock.git
 cd sherlock && python3 -m pip install -r requirements.txt && cd ..
@@ -39,3 +43,12 @@ git config --global user.email "d0lores@protonmail.com"
 git config --global user.name "d0loreshaze"
 
 
+
+# Installing Golismero
+sudo apt-get install python2.7 python2.7-dev python-docutils perl sslscan
+git clone https://github.com/golismero/golismero.git
+cd golismero
+pip install -r requirements.txt
+pip install -r requirements_unix.txt
+ln -s ${PWD}/golismero.py /usr/bin/golismero
+exit
